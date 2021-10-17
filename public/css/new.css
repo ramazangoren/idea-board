@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #eee;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    width: 900px;
+    min-height: 700px;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 30px;
+    text-align: center;
+    border-radius:10px;
+    border: 1px solid #707070;
+}
+
+
+.header {
+    font-size: 30px;
+    /* margin-bottom: 30px; */
+}
+
+.arrow
+{
+    font-size: 30px;
+    position: relative;
+    top: -30px;
+    left: -390px;
+    color: #707070;
+}
+.arrow:hover
+{
+    font-size: 30px;
+    position: relative;
+    top: -30px;
+    left: -390px;
+    color: black;
+}
+
+.content {
+    width: 800px;
+    min-height: 200px;
+    margin: auto;
+    text-align: center;
+    border-radius:5px;
+    border: 1px solid #707070;
+}
+
+
+.select{
+    font-size: 18px;
+    position: relative;
+    top: 0;
+    left: -100px;
+}
+
+.message{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+select{
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+
+
+.ideas{
+    margin-bottom: 30px;
+}
+
+#idea
+{
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+    font-size:18px;
+    width: 600px;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #707070;
+    border-radius:5px;
+}
+
+#details
+{
+    margin-bottom: 10px;
+    color: black;
+    font-size:18px;
+    width: 600px;
+    height: 170px;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #707070;
+    border-radius:10px;
+}
+
+
+.btn{
+    font-size: 18px;
+    background-color:blue;
+    color:white;
+    border: none;
+    border-radius:5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+
+.sucess
+{
+    border: 1px solid;
+	padding:5px 5px ;
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    font-size: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.error
+{
+    border: 1px solid;
+	padding:5px 5px ;
+    color: #D8000C;
+	background-color: #FFBABA;
+    font-size: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+}

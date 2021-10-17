@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>ideas | home</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Idea board</p>
+        </div>
+
+
+        <div class="content">
+            <div id="bar">
+                    <form action="/created" method="get">
+                        <button class="sortbtn" type="submit">sort by date created</button>
+                    </form>
+
+                    <form action="/updated" method="get">
+                        <button class="sortbtn1" type="submit">sort by date updated</button>
+                    </form>
+
+                    <form action="/" method="post">
+                       <input type="text" class="srchinput" name="search" placeholder="Search">
+                       <button type="submit" class="search"   >search</button>
+                    </form>
+            </div>
+
+
+
+            <div class="ideas">
+
+                {{#each data}}
+                <div class="idea">
+                    <p class="title">{{this.idea}}</p>
+                    <a href="/edit/{{this.id}}"><i class="far fa-eye" id="icon"></i></a>
+                    <a href="/{{this.id}}"><i class="far fa-trash-alt" id="icon"></i></a>
+
+                </div>
+                {{/each}}
+
+            </div>
+
+            <a href="/new" type="button" class="btn">new</a><br><br><br><br>
+
+        </div><br><br><br><br>
+
+
+    </div><br><br><br><br><br>
+</body>
+
+</html>
